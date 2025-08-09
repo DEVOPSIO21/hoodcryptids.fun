@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Creepster&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Override wallet adapter button styles */
+.wallet-adapter-button {
+  background: linear-gradient(to right, #fb923c, #f97316) !important;
+  color: #000 !important;
+  border: none !important;
+  border-radius: 9999px !important;
+  font-weight: 700 !important;
+  padding: 0.5rem 1rem !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+}
+
+.wallet-adapter-button:hover {
+  transform: scale(1.05) !important;
+  box-shadow: 0 10px 15px -3px rgba(249, 115, 22, 0.5), 0 4px 6px -2px rgba(249, 115, 22, 0.05) !important;
+}
+
+.wallet-adapter-button:not([disabled]):hover {
+  background: linear-gradient(to right, #f97316, #ea580c) !important;
+}
+
+.wallet-adapter-modal-wrapper {
+  background: rgba(0, 0, 0, 0.8) !important;
+  backdrop-filter: blur(8px) !important;
+}
+
+.wallet-adapter-modal {
+  background: linear-gradient(135deg, #000, #1f2937, #f97316) !important;
+  border: 2px solid #f97316 !important;
+  border-radius: 1rem !important;
+  color: white !important;
+}
+
+.wallet-adapter-modal h1 {
+  color: #f97316 !important;
+}
+
+.wallet-adapter-modal-list {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.wallet-adapter-modal-list-item {
+  background: rgba(249, 115, 22, 0.1) !important;
+  border: 1px solid rgba(249, 115, 22, 0.3) !important;
+  border-radius: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.wallet-adapter-modal-list-item:hover {
+  background: rgba(249, 115, 22, 0.2) !important;
+  border-color: #f97316 !important;
+}
+
+.wallet-button-container .wallet-adapter-button {
+  font-size: 0.875rem !important;
+  min-height: auto !important;
+}
+
+/* Override the wallet button text */
+.wallet-adapter-button-trigger {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+}
+
+/* Hide the default text and replace with custom */
+.wallet-adapter-button .wallet-adapter-button-start-icon {
+  display: none !important;
+}
+
+/* Hide any wallet adapter icons/images */
+.wallet-adapter-button img {
+  display: none !important;
+}
+
+.wallet-adapter-button svg {
+  display: none !important;
+}
+
+/* Custom Select Dropdown Styling */
+select option {
+  background-color: #000 !important;
+  color: #fff !important;
+  padding: 8px 12px !important;
+  border: none !important;
+}
+
+select option:hover,
+select option:focus,
+select option:checked {
+  background-color: #1a1a1a !important;
+  background: linear-gradient(135deg, #1a1a1a, #2d2d2d) !important;
+  color: #f97316 !important;
+}
+
+/* Firefox dropdown styling */
+select {
+  scrollbar-width: thin;
+  scrollbar-color: #f97316 #000;
+}
+
+/* Webkit dropdown styling */
+select::-webkit-scrollbar {
+  width: 8px;
+}
+
+select::-webkit-scrollbar-track {
+  background: #000;
+}
+
+select::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #f97316, #ea580c);
+  border-radius: 4px;
+}
+
+select::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #ea580c, #dc2626);
+}
